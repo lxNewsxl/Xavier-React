@@ -1,0 +1,37 @@
+
+<div>
+  <div>Xavier | ${this.Title}</div>
+  
+  <ul role='list' class='grid grid-cols-1 gap-6 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4'>
+
+    x{
+      var elbows = new[]{"item name","item height", "item width"};
+      @foreach(var k in elbows){
+      <div>
+        <li>
+          <article title='new item' description='@k'>
+            
+          </article>
+       </li>
+      </div>
+      }
+    }x
+    
+    
+    x{
+      return "<div class='text-2xl bg-gray-700 text-white'>${this.item}</div>";
+      }x
+
+
+  </ul>
+
+  <div>
+    
+  </div>
+  {{
+  
+  
+
+ 
+  }}
+</div>
