@@ -1,7 +1,7 @@
 ﻿
 # Xavier Framework
 
-Xavier is a new framework for reading .xavier files and generating pure Javascript modules for the rendering of components on a variety of different platforms. Xavier reads everything between x{ and }x as valid C# and everything between {{ and }} as valid Javascript, which it then compiles into a single output module. This allows developers to use C# to describe the objects while outputting JavaScript code to render the components.
+Xavier is a new web framework for reading .xavier files and generating pure Javascript modules for the rendering of components on a variety of different platforms. Xavier reads everything between x{ and }x as valid C# and everything between {{ and }} as valid Javascript, which it then compiles into a single output module. This allows developers to use C# to describe the objects while outputting JavaScript code to render the components.
 
 ## Getting Started
 
@@ -15,8 +15,20 @@ Once the file is created, you can read the .xavier file. This will compile the C
 ## This repository
 This project is an example of how to render components on a .Net core React app using Xavier:
 
+
+
+### Using Statements
 ```cs
-     // Adding these lines will initialize the AOT worker to rebuild
+    using Xavier;
+    using Xavier.AOT;
+```
+
+### Then, in your builder:
+
+```cs
+
+    
+     // Adding these static variables will initialize the AOT worker to rebuild
      // the module when the length of the file changes
 
 
