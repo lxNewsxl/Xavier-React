@@ -35,7 +35,7 @@ This project is an example of how to render components on a .Net core React app 
         //The Root tells your app to search for .xavier files with their .xavier.cs code behind
         Variables.Root = Environment.CurrentDirectory;
 
-        //The Destination is relative to the Evironment.CurrentDirectory. The final 
+        //The Destination is relative to the Environment.CurrentDirectory.
         Variables.Destination = "/ClientApp/Public/Xavier";
 
         //After you set your static variables for the AOT Compiler 
